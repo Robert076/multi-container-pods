@@ -8,3 +8,4 @@ spec:
       image: nginx:latest
     - name: busybox-container
       image: busybox:latest
+      command: ["sh", "-c", "while true; do echo busybox running; sleep 30; done"]
