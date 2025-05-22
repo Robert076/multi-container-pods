@@ -19,7 +19,7 @@ kubectl exec -ti Pods/multi-container-pod -c nginx-container -- /bin/bash
 
 You can avoid these if you just want to run a quick command like `ls`:
 ```bash
-kubectl exec pods/multi-container-ood -c nginx-container -- ls
+kubectl exec pods/multi-container-pod -c nginx-container -- ls
 ```
 
 ---
