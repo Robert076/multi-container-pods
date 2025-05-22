@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: custom-command-and-args
+spec:
+  initContainers:
+    - name: my-init-container
+      image: nginx:latest
+      command: ["sleep", "15"]
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+    - name: busybox-container
+      image: busybox:latest
+      command: ["sleep"] # corresponds to Docker's ENTRYPOINT. It overrides it. Same as below
+      args: ["60"] # corresponds to Docker's CMD. We override Docker's CMD. If we don't specify this it will default to what the image has
