@@ -1,8 +1,8 @@
 # 🌎 Practicing multi-container pods
 
-## 🚀 Useful commands:
+### 🚀 Useful commands:
 
-### 1a. Get into a specific container:
+1a. Get into a specific container:
 ```bash
 kubectl exec -ti Pods/multi-container-pod --container nginx-container -- /bin/bash
 ```
@@ -19,3 +19,5 @@ You can avoid these if you just want to run a quick command like `ls`:
 ```bash
 kubectl exec pods/multi-container-ood -c nginx-container -- ls
 ```
+
+---
