@@ -12,7 +12,7 @@ kubectl exec -ti Pods/multi-container-pod --container nginx-container -- /bin/ba
 kubectl exec -ti Pods/multi-container-pod -c nginx-container -- /bin/bash
 ```
 
-`-t` is for simulating a *terminal*
+`-t` is for simulating a *terminal* <br>
 `-i` keeps the *stdin* connection open so you can actively write commands
 
 You can avoid these if you just want to run a quick command like `ls`:
